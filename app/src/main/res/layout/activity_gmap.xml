@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_basliktar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Secilen Tarihi Yerler"
+        android:textSize="22sp"/>
+    <TextView
+        android:id="@+id/tv_tar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/tv_baslikotel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Secilen Oteller"
+        android:textSize="22sp"/>
+    <TextView
+        android:id="@+id/tv_otel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""/>
+    <TextView
+        android:id="@+id/tv_baslikgez"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tarihi Yerler"
+        android:textSize="22sp"/>
+    <TextView
+        android:id="@+id/tv_gez"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""/>
+    <TextView
+        android:id="@+id/tv_baslikres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Restoranlar"
+        android:textSize="22sp"/>
+    <TextView
+        android:id="@+id/tv_res"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""/>
+
+
+
+</LinearLayout>
+
+
