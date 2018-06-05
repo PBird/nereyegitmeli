@@ -66,6 +66,7 @@ public class YerSecimi extends AppCompatActivity {
                 Intent intent = new Intent(YerSecimi.this,GMap.class);
 
                 Bundle extras = new Bundle();
+                int toplamSecilen=0;
                 // Secilen Tarihi Yerler
                 int CountTar = mekanlar[0][3].size();
                 ArrayList<String> secilenTarPositions = new ArrayList<>();
@@ -75,6 +76,7 @@ public class YerSecimi extends AppCompatActivity {
                   {
                       secilenTarPositions.add(mekanlar[0][3].get(i)); // position
                       secilenTarIsim.add(mekanlar[0][1].get(i)); // isim
+                      toplamSecilen++;
                   }
 
                 extras.putStringArrayList("secilenTarPositions",secilenTarPositions);
@@ -90,6 +92,7 @@ public class YerSecimi extends AppCompatActivity {
                     {
                         secilenOtelPositions.add(mekanlar[1][3].get(i)); // position
                         secilenOtelIsim.add(mekanlar[1][1].get(i)); // isim
+                        toplamSecilen++;
                     }
 
                 extras.putStringArrayList("secilenOtelPositions",secilenOtelPositions);
@@ -105,6 +108,7 @@ public class YerSecimi extends AppCompatActivity {
                     {
                         secilenGezPositions.add(mekanlar[2][3].get(i)); // position
                         secilenGezIsim.add(mekanlar[2][1].get(i)); // isim
+                        toplamSecilen++;
                     }
 
                 extras.putStringArrayList("secilenGezPositions",secilenGezPositions);
@@ -120,6 +124,7 @@ public class YerSecimi extends AppCompatActivity {
                     {
                         secilenResPositions.add(mekanlar[3][3].get(i)); // position
                         secilenResIsim.add(mekanlar[3][1].get(i)); // isim
+                        toplamSecilen++;
                     }
 
                 extras.putStringArrayList("secilenResPositions",secilenResPositions);
@@ -128,7 +133,7 @@ public class YerSecimi extends AppCompatActivity {
 
 
 
-
+                extras.putInt("toplam",toplamSecilen);
                 intent.putExtras(extras);
                 startActivity(intent);
 
